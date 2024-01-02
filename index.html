@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Poppins&family=Silkscreen&display=swap" rel="stylesheet">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <!--Screen-->
+        <div class="display">
+            <h3>ROCK PAPPER SCISSOR</h3>
+
+            <!--Players-->
+            <div class="player">
+                <div class="user">
+                    <p>You:</p>
+                    <p id="you">-------</p>
+                </div>
+                <div class="computer">
+                    <p>Computer:</p>
+                    <p id="computer">-------</p>
+                </div>
+            </div>
+
+            <!--Scores-->
+            <div class="score">
+                <p id="score">Score:</p>
+                <p id="scoreCount">0</p>
+            </div>
+
+            <!--results-->
+            <div class="result">
+                <p id="results"></p>
+            </div>
+        </div>
+
+        <!--Buttons-->
+        <div class="buttons">
+            <input type="button" value="Rock" id="rock"  onclick="userChoice('rock')">
+            <input type="button" value="Papper" id="papper"   onclick="userChoice('paper')">
+            <input type="button" value="Scissor" id="scissor"  onclick="userChoice('scissor')">
+        </div>
+
+        <!--Reset Button-->
+        <div class="reset">
+            <input type="button" value="Reset" id="reset" onclick="clearBtn()">
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
